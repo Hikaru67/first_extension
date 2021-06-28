@@ -1,4 +1,4 @@
-# qr-code-chrome-ext
+# My funny extension
 
 ## Project setup
 ```
