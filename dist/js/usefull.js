@@ -22,5 +22,20 @@ $(document).ready(function () {
     $('#output2').select();
     document.execCommand("copy");
   })
+
+  $('#submit3').click(() => {
+    let name = $('#name').val().split(' ')
+    let date = $('#date').val().split('/')
+    document.getElementById("pwf").innerHTML = 
+      "<p>" + name[0] + name[1] + "</p>" +
+      "<p>" + name[0] + name[1]  + date[0] + date[1] + "</p>" +
+      "<p>" + name[0] + name[1] + date[0] + date[1] + date[2] + "</p>" +
+      "<p>" + name[0] + name[1] + date[2] + "</p>" +
+      "<p>" + name[1] + date[0] + date[1] + "</p>" +
+      "<p>" + name[1] + date[0] + date[1] + date[2] + "</p>" +
+      "<p>" + name[1] + date[2] + "</p>"
+
+    // document.execCommand("copy");
+  })
 })
 
