@@ -6,8 +6,8 @@ $(document).ready(function () {
     if (start > -1){
       output = output.slice(start + 1, output.length)
     }
-    $('#output').val(output)
-    $('#output').select();
+    $('#input').val(output)
+    $('#input').select();
     document.execCommand("copy");
   })
 
@@ -18,8 +18,8 @@ $(document).ready(function () {
       input = input.replace(regex, (match) => '_' + match.toLowerCase())
     }
     let output = input
-    $('#output2').val(output)
-    $('#output2').select();
+    $('#input2').val(output)
+    $('#input2').select();
     document.execCommand("copy");
   })
 
